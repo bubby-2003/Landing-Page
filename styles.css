@@ -1,0 +1,283 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    color: #fff;
+    padding: 1.5em 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+}
+
+.hero {
+    background: url('https://5.imimg.com/data5/QI/CP/ZD/SELLER-107762444/arun-iceream.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 7em 0;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
+    animation: fadeInDown 1s ease-out;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 1em 0;
+    animation: fadeInUp 1s ease-out;
+}
+
+.btn {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    color: #fff;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #e52e71, #ff8a00);
+}
+
+section {
+    padding: 3em 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#about {
+    background: #f7f7f7;
+    text-align: center;
+    padding: 4em 0;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #ff8a00;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+}
+
+#flavors {
+    background: #fff;
+    text-align: center;
+    padding: 4em 0;
+}
+
+#flavors h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #ff8a00;
+}
+
+.flavors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.flavor {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flavor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.flavor:hover img {
+    transform: scale(1.1);
+}
+
+.flavor:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.flavor h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    margin: 0;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#contact {
+    background: #f7f7f7;
+    text-align: center;
+    padding: 4em 0;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #ff8a00;
+}
+
+#contact p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+}
+
+form {
+    max-width: 600px;
+    margin: 2em auto 0;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button[type="submit"] {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    color: #fff;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #e52e71, #ff8a00);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
